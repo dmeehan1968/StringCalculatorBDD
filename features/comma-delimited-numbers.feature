@@ -4,13 +4,12 @@ Feature: Comma Delimited Numbers
   I want to sum comma delimited numbers
   So that I know the result
   
-Scenario Outline:
+Scenario Outline: Valid inputs
 
   When the input is "<input>"
   Then the result is <result>
   
   Examples:
-  
   | input    | result |
   | 1,2      | 3      |
   | 0,1      | 1      |
