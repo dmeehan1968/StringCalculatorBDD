@@ -1,0 +1,14 @@
+
+<step pattern = "a string containing '(.*)'">
+
+</step>
+
+<step pattern = "the result is (/d+)">
+
+</step>
+
+<world name = "calculator world">
+
+  <property name = "result" type = "int" />
+  
+</world>
