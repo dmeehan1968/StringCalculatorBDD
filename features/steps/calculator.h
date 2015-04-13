@@ -14,13 +14,9 @@ struct BeforeAll : Before {
     
 };
 
-struct AStringContaining : Step {
+struct IPassAStringContaining : Step {
     
-    void visit(Value &value) {
-        
-        world().result = StringCalculator().add(std::to_string(value));
-        
-    }
+    void visit(Value &value);
     
     CalculatorWorld &world() {
         
