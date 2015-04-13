@@ -28,11 +28,7 @@ struct IPassAStringContaining : Step {
 
 struct TheResultIs : Step {
   
-    void visit(Value &value) {
-    
-        world().result.should == value;    
-        
-    }
+    void visit(Value &value);
 
     CalculatorWorld &world() {
         
