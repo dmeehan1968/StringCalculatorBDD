@@ -1,14 +1,10 @@
 
-<step pattern = "i pass a string containing '(.*)'">
+<step pattern = "i pass a string containing '(.*)'" />
 
-</step>
-
-<step pattern = "the result is (/d+)">
-
-</step>
+<step pattern = "the result is (/d+)" />
 
 <world name = "calculator world">
 
-  <property name = "result" type = "int" />
+    <property name = "result" type = "int" />
   
 </world>
