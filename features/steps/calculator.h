@@ -2,6 +2,12 @@ struct CalculatorWorld : World {
     
     int result;
     
+    void IPassAStringContaining(Value &value) {
+        
+        result = StringCalculator().add(std::to_string(value));
+        
+    }
+    
 }
 
 struct BeforeAll : Before {
