@@ -1,9 +1,9 @@
 Feature: Adding none, one or two comma delimited numbers
 
+  In order to add numbers
   As a user
-  I want to add numbers
-  So that I get the result
-  
+  I want to parse a string of comma delimited numbers
+
 Scenario: No numbers
 
   Given an input of ""
