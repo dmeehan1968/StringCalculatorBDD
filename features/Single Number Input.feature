@@ -27,11 +27,11 @@ Scenario Outline: Multiple Digit Input
   
   Examples:
   
-  | input      | result     |
+  | input      | result     | comment |
   | 10         | 10         |
   | 11         | 11         |
   | 99         | 99         |
   | 123        | 123        |
   | 99         | 99         |
-  | 2147483647 | 2147483647 |
-  | 4294967296 | 4294967296 |
+  | 2147483647 | 2147483647 | max signed 32 bit int   |
+  | 4294967296 | 4294967296 | max unsigned 32 bit int |
