@@ -20,3 +20,18 @@ Scenario Outline: Single Digit Input
   | 1     | 1      |
   | 9     | 9      |
   
+Scenario Outline: Multiple Digit Input
+
+  When the input is "<input>"
+  Then the result is "<result>"
+  
+  Examples:
+  
+  | input      | result     |
+  | 10         | 10         |
+  | 11         | 11         |
+  | 99         | 99         |
+  | 123        | 123        |
+  | 99         | 99         |
+  | 2147483647 | 2147483647 |
+  | 4294967296 | 4294967296 |
