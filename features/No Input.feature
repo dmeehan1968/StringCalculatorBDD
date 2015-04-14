@@ -8,5 +8,11 @@ Background:
   Given a calculator
   
 Scenario: No input
+
   When the input is ""
+  Then the result is 0
+  
+Scenario: Whitespace input
+
+  When the input is "  "
   Then the result is 0
