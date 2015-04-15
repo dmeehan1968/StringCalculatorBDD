@@ -31,3 +31,8 @@ Scenario: Multiple Comma Delimited Numbers
   | 1,2,3,4             | 10     |
   | 1,1,1,1,1,1,1,1,1,1 | 10     |
   
+Scenario: Consequtive delimiters is an error
+
+  When the input is "1,\n"
+  Then there is an error "Consequtive delimiters not allowed"
+  
