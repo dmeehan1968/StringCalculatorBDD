@@ -11,7 +11,7 @@ Background:
 Scenario Outline: Negative produces an error
 
   When the input is "<input>"
-  Then there is an error "Negatives are not allowed"
+  Then there is an error "Negatives not allowed"
   
   Examples:
   |input |
