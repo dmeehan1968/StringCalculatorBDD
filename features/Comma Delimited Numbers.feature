@@ -33,6 +33,6 @@ Scenario: Multiple Comma Delimited Numbers
   
 Scenario: Consequtive delimiters is an error
 
-  When the input is "1,\n"
+  When the input is "1,,2"
   Then there is an error "Consequtive delimiters not allowed"
   
