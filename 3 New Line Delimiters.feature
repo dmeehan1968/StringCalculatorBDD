@@ -1,4 +1,4 @@
-Feature: New Line Delimiters
+Feature: Step 3, New Line Delimiters
 
   https://osherove.com/tdd-kata-1
 
