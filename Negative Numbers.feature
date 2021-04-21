@@ -6,16 +6,16 @@ Feature: Negative Numbers
   
 Background:
 
-  Give a calculator
+  Given a calculator
   
 Scenario Outline: Negative produces an error
 
   When the input is "<input>"
-  Then there is an error "Negatives not allowed: <negatives>"
+  Then there is an exception "Negatives not allowed, got <negatives>"
   
   Examples:
   | input  | negatives |
   | 1,-1   | -1        |
   | -2,1   | -2        |
   | -1     | -1        |
-  | -1, -2 | -1, -2    |
+  | -1,-2  | -1, -2    |

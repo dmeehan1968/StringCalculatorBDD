@@ -16,5 +16,5 @@ Scenario: Mixed comma or newline delimiters
 Scenario: Consequtive delimiters is an error
 
   When the input is "1,\n"
-  Then there is an error "Consequtive delimiters not allowed"
+  Then there is an exception "Multiple delimiters encountered"
   

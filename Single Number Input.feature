@@ -11,7 +11,7 @@ Background:
 Scenario Outline: Single Digit Input
 
   When the input is "<input>"
-  Then the result is "<result>"
+  Then the result is <result>
   
   Examples:
   
@@ -23,7 +23,7 @@ Scenario Outline: Single Digit Input
 Scenario Outline: Multiple Digit Input
 
   When the input is "<input>"
-  Then the result is "<result>"
+  Then the result is <result>
   
   Examples:
   
